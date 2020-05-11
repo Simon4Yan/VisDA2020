@@ -50,6 +50,13 @@ The challenge dataset split is organized as follows:
 
 By downloading these datasets you agree to the following terms:
 
+### Naming Rule of the bboxes. 
+In bbox "0046_c5s1_004279_02", "c5" is the 5-th camera (there 6 cameras in training and 5 cameras in testing). "s1" is sequence 1 of camera 5. "004279" is the4279-th frame in the sequence "c5s1". The frame rate is 25 frames per sec.
+"0046" is the person ID.
+
+Moreover, we have provided a tiny code to read images and get camera & ID information:
+https://github.com/Simon4Yan/VisDA2020/tree/master/devkit/data/datasets
+
 ### Terms of Use
 - You will use the data only for non-commercial research and educational purposes.
 - You will NOT distribute the images.
