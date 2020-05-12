@@ -50,7 +50,7 @@ The challenge dataset split is organized as follows:
 
 By downloading these datasets you agree to the following terms:
 
-### Naming Rule of the bboxes. 
+### Naming Rule of the bboxes
 In bbox "0046_c5s1_004279_02", "c5" is the 5-th camera (there 6 cameras in training and 5 cameras in testing). "s1" is sequence 1 of camera 5. "004279" is the4279-th frame in the sequence "c5s1". The frame rate is 25 frames per sec.
 "0046" is the person ID.
 
@@ -71,7 +71,24 @@ You can download the datasets with the following link: [GoogleDrive](https://dri
 
 We have provided the evaluation script used by our server so that *you may evaluate your results offline*. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants. Our server will be online in a few weeks. After that, we will maintain a leaderboard and update it on this page. 
 
-The final rank will be determined by the overall accuracy on the target test set. The evaluation metrics used to rank the performance of each team will be mean Average Precision (mAP) and Cumulated Matching Characteristics (CMC) curve.
+The evaluation metrics used to rank the performance of each team will be mean Average Precision (mAP) and Cumulated Matching Characteristics (CMC) curve. The metrics evaluate the top-100 matches. 
+
+### Submission Format
+Each line of the submitted file contains a list of the top 100 matches from the gallery set for each query, in ascending order of their distance to the query. The delimiter is space. Each match should be represented as the **index** of the gallery image (0000 and 3599 for the validation). 
+
+- The index of each image in the validation set can be found in [submit-val](https://github.com/Simon4Yan/VisDA2020/submit_val).
+- Please see a sample submission file [submission-example]( https://github.com/Simon4Yan/VisDA2020/submit_val).
+
+### Submitting to the Evaluation Server
+Once the servers become available, you will be able to submit your results:
+
+- Generate "result.txt"
+- Place the result file into a zip file named [team_name]_submission
+- Submit to the CodaLab evaluation server following the instructions below
+
+To submit your zipped result file to the appropriate VisDA challenge click on the “Participate” tab. Select the phase (validation or testing). Select Submit / View Results, fill in the required fields and click “Submit”. A pop-up will prompt you to select the results zip file for upload. After the file is uploaded, the evaluation server will begin processing. This might take some time. To view the status of your submission please select “Refresh Status”. If the status of your submission is “Failed” please check your file is named correctly and has the right format. You may refer to the scoring output and error logs for more details.
+
+After you submit your results to the evaluation server, you can control whether your results are publicly posted to the CodaLab leaderboard. To toggle the public visibility of your results please select either “post to leaderboard” or “remove from leaderboard.”
 
 ## Devkit
 We provide a simple baseline code ([based on codes [3]](https://github.com/Simon4Yan/feature_learning)). In the devkit, we provide code for reading the challenge datasets and evaluation code.
