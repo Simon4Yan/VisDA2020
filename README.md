@@ -80,6 +80,8 @@ Each line of the submitted file contains a list of the top 100 matches from the 
 - Please see a sample submission file [submission-example]( https://github.com/Simon4Yan/VisDA2020/tree/master/submit_val).
 
 ### Submitting to the Evaluation Server
+(TBD) The Codalab server will be online this week.
+
 Once the servers become available, you will be able to submit your results:
 
 - Generate "result.txt"
