@@ -67,7 +67,7 @@ def main():
         torch.manual_seed(args.seed)
     device = torch.device("cuda" if use_cuda else "cpu")
 
-    source_loader = IterLoader(make_data_loader(batch_size=args.batch_size, dataset='personX_spgan', use_cuda=use_cuda, tri_sample=True))
+    source_loader = IterLoader(make_data_loader(batch_size=args.batch_size, dataset='personX', use_cuda=use_cuda, tri_sample=True))
 
     model = FT_Resnet(num_classes=700)
     model = model.to(device)
