@@ -68,13 +68,17 @@ https://github.com/Simon4Yan/VisDA2020/tree/master/devkit/data/datasets
 
 You can download the datasets with the following link: [GoogleDrive](https://drive.google.com/open?id=18qIbI1XiG2n36qCTS-Te-2XATxiHNVDj) and [OneDrive](https://1drv.ms/u/s!AhjrHmxemkOga91UXOVXsVZJqTg?e=kbE1CC).
 
-
+Moreover, we also provide translated images from SPGAN [2]. SPGAN conducts source-target image translation, such that the translated images follow the distribution of the target. Thus, the Re-ID model trained on the translated images achieves high accuracy on the test set. OneDrive: [PersonX_SPGAN](https://1drv.ms/u/s!AhjrHmxemkOgbIahEx1m49NDuDI?e=i9wE31) or GoogleDrive: [PersonX_SPGAN](https://drive.google.com/open?id=1HEV_EfnLAWU_a5pyeZ12yl5lRCeivDG-).
 
 ## Evaluating your Model
+We have provided the evaluation script used by our server so that *you may evaluate your results offline*. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants.
+We will use CodaLab to evaluate submissions and maintain a leaderboard. To register for the evaluation server, please create an account on CodaLab and enter as a participant in the following competition:
 
-We have provided the evaluation script used by our server so that *you may evaluate your results offline*. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants. Our server will be online in a few weeks. After that, we will maintain a leaderboard and update it on this page. 
+[Domain Adaptive Pedestrian Re-identification](https://competitions.codalab.org/competitions/24664)
 
-The evaluation metrics used to rank the performance of each team will be mean Average Precision (mAP) and Cumulated Matching Characteristics (CMC) curve. The metrics evaluate the top-100 matches. 
+If you are working as a team, you have the option to register for one account for your team or register multiple accounts under the same team name. If you choose to use one account, please indicate the names of all of the members on your team. This can be modified in the “User Settings” tab. If your team registers for multiple accounts, please do so using the protocol explained by CodaLab here. Regardless of whether you register for one or multiple accounts, your team must adhere to the per-team submission limits (20 entries per day per team during the validation phase). 
+
+The evaluation metrics used to rank the performance of each team will be mean Average Precision (mAP) and Cumulated Matching Characteristics (CMC) curve. **The metrics evaluate the top-100 matches**. 
 
 ### Submission Format
 Each line of the submitted file contains a list of the top 100 matches from the gallery set for each query, in ascending order of their distance to the query. The delimiter is space. Each match should be represented as the **index** of the gallery image (0000 and 3599 for the validation). 
@@ -83,7 +87,7 @@ Each line of the submitted file contains a list of the top 100 matches from the 
 - Please see a sample submission file [submission-example]( https://github.com/Simon4Yan/VisDA2020/tree/master/submit_val).
 
 ### Submitting to the Evaluation Server
-(TBD) The Codalab server will be online this week.
+[Domain Adaptive Pedestrian Re-identification](https://competitions.codalab.org/competitions/24664)
 
 Once the servers become available, you will be able to submit your results:
 
@@ -107,6 +111,7 @@ The baseline performance is,
 |Methods | Rank@1 | mAP| Reference|
 | -------- | ----- | ---- | ---- |
 | Source Only |26.53 | 14.19 |  [ResNet-50] |
+| SPGAN |41.11 | 21.35  |  [ResNet-50] |
 
 ## Feedback and Help
 If you find any bugs please [open an issue](https://github.com/Simon4Yan/VisDA2020/issues/new).
