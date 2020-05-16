@@ -107,7 +107,6 @@ After you submit your results to the evaluation server, you can control whether 
 We provide a simple baseline code ([based on codes [3]](https://github.com/Simon4Yan/feature_learning)). In the devkit, we provide code for reading the challenge datasets and evaluation code.
 
 - The mAP evaluation code in this github evaluates all matches.  And the server evaluates mAP based on top-100 matches (this is commonly used in the community, such as [Aitychallenge](https://www.aicitychallenge.org/2020-data-and-evaluation/)).
-
 Thus, the CMC ranks are identical, while the mAP in the server is higher.  Consider the generality, I provide the code here to evaluate all matches. You could modify the evaluation code to evaluate the top-100 matches, if you want to calculate the same number of mAP with the codalab.
 
 ```bash
