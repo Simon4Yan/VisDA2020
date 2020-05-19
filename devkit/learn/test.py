@@ -89,7 +89,12 @@ def main():
                                    all_cmc[4], all_cmc[9], all_cmc[19], all_cmc[49], mAP*100))
 
     # write txt for challenge server
-    # note that mAP is evaluated only on top-100 results
+    '''note that mAP is evaluated only on top-100 results
+    if using this line of code to generate submission file, please make sure:
+    1) each line of q_g_dist is corresponding to the required query;
+    2) each line of indices is in ascending order of their distance to the query.
+    For more details, please check https://github.com/Simon4Yan/VisDA2020/tree/master/submit_val
+    '''
     # indices = np.argsort(q_g_dist, axis=1)
     # np.savetxt("answer.txt", indices[:, :100], fmt="%04d")
 
