@@ -78,7 +78,7 @@ You can download the datasets with the following link: [GoogleDrive](https://dri
 Moreover, we also provide translated images from SPGAN [2]. SPGAN conducts source-target image translation, such that the translated images follow the distribution of the target. Thus, the Re-ID model trained on the translated images achieves high accuracy on the test set. OneDrive: [PersonX_SPGAN](https://1drv.ms/u/s!AhjrHmxemkOgbIahEx1m49NDuDI?e=i9wE31) or GoogleDrive: [PersonX_SPGAN](https://drive.google.com/open?id=1HEV_EfnLAWU_a5pyeZ12yl5lRCeivDG-).
 
 ### test set
-Please download test set at, 1) [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u6854640_anu_edu_au/ETWqYQBHh35JtOPJ4BsZlIgBK4bkLjci9OOvtjUJ4ipDZA?e=N0sLNT), and 2) [GoogleDrive](https://drive.google.com/file/d/1Bux5azDss9ywl2cJlnHs4MozMYs4B0n9/view?usp=sharing)
+Please download test set at, 1) [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u6854640_anu_edu_au/EafBwUiEompHmzrVe4u1NM4B3FyQL0rEkYaYJWy8h-QDqw?e=zGbo4K), and 2) [GoogleDrive](https://drive.google.com/file/d/1MNZhMo3JFSNzTZx2ZdOZTvyKAE4kuVNJ/view?usp=sharing)
 
 ## Evaluating your Model
 We have provided the evaluation script used by our server so that *you may evaluate your results offline*. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants.
@@ -103,7 +103,7 @@ More specifically, the first line of submission file is corresponding to the top
 
 Once the servers become available, you will be able to submit your results:
 
-- Generate "result.txt". (The txt name should be "result.txt", please don't modify its name)
+- Generate "result.txt".
 - Place the result file into a zip file named [team_name]_submission.
   In this step, please directly zip the result file and get "result.zip". You can choose to 
   rename the zip to [team_name]_submission or just submit the "result.zip" for convenience.
@@ -127,8 +127,8 @@ python learn/test.py
 The baseline performance is, 
 |Methods | Rank@1 | mAP| Reference|
 | -------- | ----- | ---- | ---- |
-| Source Only |21.56 | 17.56 |  [ResNet-50] |
-| SPGAN |27.42 | -  |  [ResNet-50] |
+| Source Only |26.53 | 14.19 |  [ResNet-50] |
+| SPGAN |41.11 | 21.35  |  [ResNet-50] |
 
 
 ## Feedback and Help
