@@ -47,8 +47,15 @@ The challenge dataset split is organized as follows:
 |           ├── 0001_c1s1_000017_02.jpg
 |           ├── 0002_c4s1_000918_04.jpg
 |           ...
-│   ├── target_test (TBD)               /* test set
-
+│   ├── target_test                     /* test set
+│       ├── image_gallery
+|           ├── 000000.jpg
+|           ├── 000001.jpg
+|           ...
+│       ├── image_query/
+|           ├── 0000.jpg
+|           ├── 0001.jpg
+|           ...
 ```
 
 By downloading these datasets you agree to the following terms:
@@ -70,6 +77,9 @@ You can download the datasets with the following link: [GoogleDrive](https://dri
 
 Moreover, we also provide translated images from SPGAN [2]. SPGAN conducts source-target image translation, such that the translated images follow the distribution of the target. Thus, the Re-ID model trained on the translated images achieves high accuracy on the test set. OneDrive: [PersonX_SPGAN](https://1drv.ms/u/s!AhjrHmxemkOgbIahEx1m49NDuDI?e=i9wE31) or GoogleDrive: [PersonX_SPGAN](https://drive.google.com/open?id=1HEV_EfnLAWU_a5pyeZ12yl5lRCeivDG-).
 
+### test set
+Please download test set at, 1) [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u6854640_anu_edu_au/ETWqYQBHh35JtOPJ4BsZlIgBK4bkLjci9OOvtjUJ4ipDZA?e=N0sLNT), and 2) [GoogleDrive](https://drive.google.com/file/d/1Bux5azDss9ywl2cJlnHs4MozMYs4B0n9/view?usp=sharing)
+
 ## Evaluating your Model
 We have provided the evaluation script used by our server so that *you may evaluate your results offline*. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants.
 We will use CodaLab to evaluate submissions and maintain a leaderboard. To register for the evaluation server, please create an account on CodaLab and enter as a participant in the following competition:
@@ -81,12 +91,12 @@ If you are working as a team, you have the option to register for one account fo
 The evaluation metrics used to rank the performance of each team will be mean Average Precision (mAP) and Cumulated Matching Characteristics (CMC) curve. **The metrics evaluate the top-100 matches**. 
 
 ### Submission Format
-Each line of the submitted file contains a list of the top 100 matches from the gallery set for each query, in ascending order of their distance to the query. The delimiter is space. Each match should be represented as the **index** of the gallery image (0000 and 3599 for the validation). 
+Each line of the submitted file contains a list of the top 100 matches from the gallery set for each query, in ascending order of their distance to the query. The delimiter is space. Each match should be represented as the **index** of the gallery image (from 00000 to 24005 for the test set). 
 
 More specifically, the first line of submission file is corresponding to the top 100 matches (represented as indices) of the first query (index=0000); the second line is corresponding to the second query (idex=0001).
 
-- The index of each image in the validation set can be found in [submit-val](https://github.com/Simon4Yan/VisDA2020/tree/master/submit_val).
-- Please see a sample submission file [submission-example]( https://github.com/Simon4Yan/VisDA2020/tree/master/submit_val).
+- The index of each image in the validation set can be found in [submit-test](https://github.com/Simon4Yan/VisDA2020/tree/master/submit_test).
+- Please see a sample submission file [submission-example]( https://github.com/Simon4Yan/VisDA2020/tree/master/submit_test).
 
 ### Submitting to the Evaluation Server
 [Domain Adaptive Pedestrian Re-identification](https://competitions.codalab.org/competitions/24664)
@@ -117,8 +127,8 @@ python learn/test.py
 The baseline performance is, 
 |Methods | Rank@1 | mAP| Reference|
 | -------- | ----- | ---- | ---- |
-| Source Only |26.53 | 14.19 |  [ResNet-50] |
-| SPGAN |41.11 | 21.35  |  [ResNet-50] |
+| Source Only |21.56 | 17.56 |  [ResNet-50] |
+| SPGAN |27.42 | -  |  [ResNet-50] |
 
 
 ## Feedback and Help
