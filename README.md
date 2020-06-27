@@ -80,6 +80,8 @@ Moreover, we also provide translated images from SPGAN [2]. SPGAN conducts sourc
 ### test set
 Please download test set at, 1) [OneDrive](https://anu365-my.sharepoint.com/:u:/g/personal/u6854640_anu_edu_au/EafBwUiEompHmzrVe4u1NM4B3FyQL0rEkYaYJWy8h-QDqw?e=zGbo4K), and 2) [GoogleDrive](https://drive.google.com/file/d/1MNZhMo3JFSNzTZx2ZdOZTvyKAE4kuVNJ/view?usp=sharing)
 
+Please kindly follow the [RULES](http://ai.bu.edu/visda-2020/#rules) and read the [FAQ](http://ai.bu.edu/visda-2020/#faq), thanks!
+
 ## Evaluating your Model
 We have provided the evaluation script used by our server so that *you may evaluate your results offline*. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants.
 We will use CodaLab to evaluate submissions and maintain a leaderboard. To register for the evaluation server, please create an account on CodaLab and enter as a participant in the following competition:
