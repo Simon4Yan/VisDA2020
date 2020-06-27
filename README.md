@@ -77,13 +77,13 @@ You can download the datasets with the following link: [GoogleDrive](https://dri
 
 Moreover, we also provide translated images from SPGAN [2]. SPGAN conducts source-target image translation, such that the translated images follow the distribution of the target. Thus, the Re-ID model trained on the translated images achieves high accuracy on the test set. OneDrive: [PersonX_SPGAN](https://1drv.ms/u/s!AhjrHmxemkOgbIahEx1m49NDuDI?e=i9wE31) or GoogleDrive: [PersonX_SPGAN](https://drive.google.com/open?id=1HEV_EfnLAWU_a5pyeZ12yl5lRCeivDG-).
 
-### test set
-The test set is available in [here](https://drive.google.com/file/d/12oWSOK1oQVhTNqoVUli70dboXOxPxG41/view?usp=sharing). You need fill in the [google form](https://forms.gle/9hjryZ5WDUUEZTAX9) to get password for unzipping files. If you can not open the form, please fill the [form offline](https://github.com/Simon4Yan/VisDA2020/tree/master/form/) and send it to (weijian.deng@anu.edu.au).
+### Download the Test Set
+The test set is available in [here](https://drive.google.com/file/d/12oWSOK1oQVhTNqoVUli70dboXOxPxG41/view?usp=sharing). You need fill in the [google form](https://forms.gle/9hjryZ5WDUUEZTAX9) to get password for unzipping files. If you can not open the form, please fill in the [form offline](https://github.com/Simon4Yan/VisDA2020/tree/master/form/) and send it to (weijian.deng@anu.edu.au).
 
 Please kindly follow the [RULES](http://ai.bu.edu/visda-2020/#rules) and read the [FAQ](http://ai.bu.edu/visda-2020/#faq), thanks!
 
 
-## Evaluating your Model
+## Evaluating Your Model
 We have provided the evaluation script used by our server so that *you may evaluate your results offline*. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants.
 We will use CodaLab to evaluate submissions and maintain a leaderboard. To register for the evaluation server, please create an account on CodaLab and enter as a participant in the following competition:
 
