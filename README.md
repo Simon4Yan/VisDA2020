@@ -80,7 +80,7 @@ Moreover, we also provide translated images from SPGAN [2]. SPGAN conducts sourc
 ### Download the Test Set
 - The test set is available in [here](https://drive.google.com/file/d/12oWSOK1oQVhTNqoVUli70dboXOxPxG41/view?usp=sharing). You need to fill in the [google form](https://forms.gle/9hjryZ5WDUUEZTAX9) to get the password for unzipping files. If you can not open the form, please fill in the [form offline](https://github.com/Simon4Yan/VisDA2020/tree/master/form/) and send it to (weijian.deng@anu.edu.au).
 
-- We respectively notice that all participating teams should fill in the form above. If you haven't finished, please fill it online or offline. Thanks!
+- We respectfully notice that all participating teams should fill in the form above. If you haven't finished, please fill it online or offline. Thanks!
 
 - Please kindly follow the [RULES](http://ai.bu.edu/visda-2020/#rules) and read the [FAQ](http://ai.bu.edu/visda-2020/#faq), thanks!
 
