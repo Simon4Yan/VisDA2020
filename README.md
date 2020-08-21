@@ -135,6 +135,9 @@ The baseline performance is,
 | Source Only |26.53 | 14.19 |  [ResNet-50] |
 | SPGAN |41.11 | 21.35  |  [ResNet-50] |
 
+## Broader Impact
+
+This competition is featured by learning from synthetic 3D person data. We are not only advancing state-of-the-art technologies in domain adaptation, metric learning and deep neural networks, but importantly aim to reduce system reliance on real-world datasets. While we evaluate our algorithms on real-world data, we have adopted strict measures to take care of the privacy issue. For example, all the faces have been blurred. The participants have signed to comply with our data protection agreement, where we have forbidden the posting or distribution of test images in papers or other public domains. We believe these measures will significantly improve data safety and privacy, while allowing researchers to develop useful technologies.
 
 ## Feedback and Help
 If you find any bugs please [open an issue](https://github.com/Simon4Yan/VisDA2020/issues/new).
