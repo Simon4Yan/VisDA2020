@@ -6,6 +6,11 @@ This is the development kit repository for [the 2020 Visual Domain Adaptation (V
 
 Have fun!
 
+## Codes form Top-performing Teams
+
+Please check: https://github.com/Simon4Yan/VisDA2020_Code_From_Top_Teams. Thanks for all teams for their contributions to the community.
+
+
 ## Overview
 This year’s challenge focuses on **Domain Adaptive Pedestrian Re-identification**, where the source and target domains have completely different classes (pedestrian IDs). The particular task is to retrieve the pedestrian instances of the same ID as the query image. This problem is significantly different from previous VisDA challenges, where the source and target domains share some overlapping classes. Moreover, ID matching depends on fine-grained details, making the problem harder than before.
 
